@@ -8,14 +8,14 @@ content_blocks:
     preheading: "We are Professionals"
     heading: "Don’t Hesitate to contact with us for any kind of information"
     form_heading: "Contact Form"
-    address: "North Main Street, Brooklyn, Australia"
-    email: contact@mail.com 
-    phone: +88 01672 506 744 
+    address: "STPI - Warangal, Hanamkonda, Telangana, India"
+    email: ask@yayinailab.tech
+    phone: +91 9182398852
     facebook: themefisher
     twitter: themefisher
     linkedin: themefisher
   - _bookshop_name: "map"
     latitude: 40.712776
     longitude: -74.005974
-    name: "Megakit"
+    name: "Yayin AI Lab"
 ---

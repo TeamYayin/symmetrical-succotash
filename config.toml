@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://teamyayin.github.io/symmetrical-succotash/'
 languageCode = 'en-us'
-title = "Megakit"
+title = "Yayin AI Lab"
 Paginate = 20
 PaginatePath = "/"
 summaryLength = 10
