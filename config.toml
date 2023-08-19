@@ -1,5 +1,5 @@
 relativeURLs = true
-baseURL = 'https://teamyayin.github.io/symmetrical-succotash/'
+baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Yayin AI Lab"
 Paginate = 20
