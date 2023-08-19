@@ -5,8 +5,8 @@ hero:
   background_image: "/images/bg/home-2.jpg"
 content_blocks:
   - _bookshop_name: "start"
-    preheading: "What we are"
-    heading: "We are a dynamic team of creative people"
+    preheading: "Who We Are"
+    heading: "A Dynamic Team of Creatives"
     text: "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
     image_path: "/images/bg/home-7.jpg"
     button:
@@ -15,32 +15,32 @@ content_blocks:
   - _bookshop_name: "numbers"
     sections:
       - title: "Our Mission"
-        text: "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."
+        text: "Our mission is to provide innovative and tailored solutions that enable businesses to thrive in a competitive landscape. We're committed to driving success through strategic partnerships."
       - title: "Vision"
-        text: "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."
+        text: "Our vision is to become a globally recognized consulting firm known for delivering transformative results. We aim to be the go-to choice for businesses seeking growth and optimization."
       - title: "Our Approach"
-        text: "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."
+        text: "Our approach is rooted in collaboration, innovation, and expertise. We work closely with our clients to understand their unique challenges and develop custom strategies to overcome them."
   - _bookshop_name: "counter_dark"
     numbers:
       - icon: "ti-check"
-        number: 1730
+        number: 10
         suffix: "+"
         text: "Projects Done"
       - icon: "ti-flag"
-        number: 125
-        suffix: "M"
+        number: 25
+        suffix: "K"
         text: "Users Worldwide"
       - icon: "ti-layers"
-        number: 39
+        number: 3
         suffix: ""
         text: "Available Countries"
       - icon: "ti-medall"
-        number: 14
+        number: 0
         suffix: ""
         text: "Awards Won"
   - _bookshop_name: "team"
-    preheading: "Our Team"
-    heading: "Expert Team member to get best service"
+    preheading: "Meet Our Team"
+    heading: "A Team of Experts Dedicated to Excellence"
     people:
       - name: "David Spensor"
         image: "/images/team/team-1.jpg"
