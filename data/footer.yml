@@ -2,15 +2,12 @@ column:
   - heading: Company
     items:
       - name: "Terms & Conditions"
-        url: "/about/"
+        url: "/posts/2023/06/15/terms-conditions/"
         open_in_new_tab: false
       - name: "Privacy Policy"
-        url: "/about/"
+        url: "/posts/2023/06/15/privacy-policy/"
         open_in_new_tab: false
       - name: "Support"
-        url: "/contact/"
-        open_in_new_tab: false
-      - name: "FAQ"
         url: "/contact/"
         open_in_new_tab: false
   - heading: Quick Link

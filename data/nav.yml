@@ -9,11 +9,8 @@ menu:
     url: "/services/"
     open_in_new_tab: false
   - name: "Portfolio"
-    url: "/portfolio/"
-    open_in_new_tab: false
-  - name: "Pricing"
-    url: "/pricing/"
-    open_in_new_tab: false
+    url: "https://portfolio.yayinailab.tech/projects"
+    open_in_new_tab: true
   - name: "Blog"
     url: "/blog/"
     open_in_new_tab: false

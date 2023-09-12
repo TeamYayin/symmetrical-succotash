@@ -8,14 +8,14 @@ content_blocks:
     preheading: "We are Here to Help"
     heading: "Don’t Hesitate to Contact Us for Any kind of Information"
     form_heading: "Contact Form"
-    address: "STPI Incubation Center, Kakatiya IT Park,Circuit House Road, Hanamkonda,506001"
+    address: "STPI Incubation Center, Kakatiya IT Park, Hanamkonda, Telangana - 506001"
     email: ask@yayinailab.tech
     phone: +91 9182398852
-    facebook: themefisher
-    twitter: themefisher
-    linkedin: themefisher
+    facebook: awashedupnerd
+    github: teamyayin
+    linkedin: yayinailab
   - _bookshop_name: "map"
-    latitude: 17.988171
-    longitude: 79.530762
-    name: "Yayin AI Lab"
+    latitude: 18.003339767456055
+    longitude: 79.55231475830078
+    name: "Yayin AI Lab, STPI Incubation Center, Kakatiya IT Center, Hanamkonda"
 ---

@@ -9,9 +9,9 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  latitude: 40.712776
-  longitude: -74.005974
-  name: ""
+  latitude: 18.003339767456055
+  longitude: 79.55231475830078
+  name: "STPI Incubation Center, Kakatiya IT Park, Hanamkonda, Telangana 506001"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
