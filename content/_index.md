@@ -4,7 +4,7 @@ content_blocks:
   - _bookshop_name: "big-hero"
     preheading: "Welcome to Yayin"
     heading: "Unlocking Creativity through Collaboration"
-    background_image: "/images/bg/home-1.jpg"
+    background_image: "/images/home-1.jpg"
     link:
       text: "Get started"
       url: "/"
@@ -26,7 +26,7 @@ content_blocks:
     heading: "We are dynamic team of creative people"
     subheading: "We are Perfect Solution"
     content: "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
-    background_image: "/images/about/home-8.jpg"
+    background_image: "/images/home-8.jpg"
     link:
       text: "Learn More"
       url: "/"
@@ -67,7 +67,7 @@ content_blocks:
         icon: "ti-pencil-alt"
         content: "Empowering teams with specialized training programs."
   - _bookshop_name: "cta"
-    background_image: "/images/bg/home-3.jpg"
+    background_image: "/images/home-3.jpg"
     preheading: "Our Services"
     heading: "We provide a wide range of creative services"
     content: "Have any project on mind? For immediate support:"

@@ -2,7 +2,7 @@
 title: "Contact Us"
 hero:
   title: "Get In Touch"
-  background_image: "/images/bg/home-2.jpg"
+  background_image: "/images/home-2.jpg"
 content_blocks:
   - _bookshop_name: "contact_form"
     preheading: "We are Here to Help"

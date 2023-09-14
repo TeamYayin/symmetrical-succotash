@@ -2,13 +2,13 @@
 title: "About"
 hero:
   title: "Our Company"
-  background_image: "/images/bg/home-2.jpg"
+  background_image: "/images/home-2.jpg"
 content_blocks:
   - _bookshop_name: "start"
     preheading: "Who We Are"
     heading: "A Dynamic Team of Creatives"
     text: "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
-    image_path: "/images/bg/home-7.jpg"
+    image_path: "/images/home-7.jpg"
     button:
       text: "Get started"
       url: "/contact/"
@@ -21,6 +21,7 @@ content_blocks:
       - title: "Our Approach"
         text: "Our approach is rooted in collaboration, innovation, and expertise. We work closely with our clients to understand their unique challenges and develop custom strategies to overcome them."
   - _bookshop_name: "counter_dark"
+    background_image: /images/home-3.jpg
     numbers:
       - icon: "ti-check"
         number: 10
@@ -60,29 +61,27 @@ content_blocks:
         linkedin: "shylesh-arepelly-9695641ab"
       - name: "Esha Bachuwar"
         image: "/images/team/female-sketch-43.svg"
-        role: "PCB Design Intern"
+        role: "Web Design Intern"
         linkedin: "esha-bachuwar-499842177"
       - name: "Sriharsh Gampa"
         image: "/images/team/male-sketch-55.svg"
         role: "Web Developer Intern"
         linkedin: "sriharsh-gampa"
-      
+
       - name: "Peddi Gopal"
         image: "/images/team/male-sketch-28.svg"
         role: "Web Developer Intern"
-        linkedin: "gopalp379" 
+        linkedin: "gopalp379"
       - name: "Bharani Racharla"
         image: "/images/team/female-sketch-43.svg"
-        role: "Web Developer Past Intern"
+        role: "Communications (Past) Intern"
         linkedin: "bharani-racharla-2339051a4"
       - name: "priyanshu"
         image: "/images/team/male-sketch-11.svg"
-        role: "Web Developer Past Intern"
+        role: "PCB Design (Past) Intern"
         linkedin: "priyanshu-ss"
       - name: "Akhilesh"
         image: "/images/team/male-sketch-28.svg"
-        role: "Web Developer Past Intern"
+        role: "PCB Design (Past) Intern"
         linkedin: "akhilesh-kumar-p"
-     
-      
 ---

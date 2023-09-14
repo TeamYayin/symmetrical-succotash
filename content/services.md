@@ -2,7 +2,7 @@
 title: "Our Services"
 hero:
   title: "What We do"
-  background_image: "/images/bg/home-2.jpg"
+  background_image: "/images/home-2.jpg"
 content_blocks:
   - _bookshop_name: "services"
     preheading: "Explore Our Services"

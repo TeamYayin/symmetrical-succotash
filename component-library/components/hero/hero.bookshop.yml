@@ -19,7 +19,7 @@ preview:
   title: Hero page
   hero:
     title: Hero
-    background_image: /images/bg/home-2.jpg
+    background_image: /images/home-2.jpg
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

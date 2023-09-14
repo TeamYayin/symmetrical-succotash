@@ -1,18 +1,17 @@
-// Counter Section 
+// Counter Section
 
-.counter-item{
-	.counter-stat{
-		font-size: 50px;
-	}
+.counter-item {
+  .counter-stat {
+    font-size: 50px;
+  }
 
-	p{
-		margin-bottom: 0px;
-	}
-
+  p {
+    margin-bottom: 0px;
+  }
 }
 
-.bg-counter{
-	background: url("../images/bg/counter.jpg")no-repeat;
-	background-size: cover;
-	@extend .overly-2;
+.bg-counter {
+  background: no-repeat;
+  background-size: cover;
+  @extend .overly-2;
 }

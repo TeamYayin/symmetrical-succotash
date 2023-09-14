@@ -26,7 +26,7 @@ preview:
   content: We provide consulting services in the area of IFRS and management
     reporting, helping companies to reach their highest level. We optimize
     business processes, making them easier.
-  background_image: /images/about/home-8.jpg
+  background_image: /images/home-8.jpg
   link:
     text: Get started
     url: "#"
