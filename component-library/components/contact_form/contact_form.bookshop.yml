@@ -22,7 +22,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   preheading: We are Professionals
-  heading: Don’t Hesitate to contact with us for any kind of information
+  heading: Do not Hesitate to contact with us for any kind of information
   form_heading: Contact Form
   address: North Main Street, Brooklyn, Australia
   email: contact@mail.com

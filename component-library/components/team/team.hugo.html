@@ -48,5 +48,15 @@
 				</div>
 			{{ end }}
 		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					{{ with .button }}
+							<a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+					{{ end }}
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

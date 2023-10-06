@@ -23,7 +23,7 @@ preview:
   background_image: /images/home-1.jpg
   link:
     text: Get started
-    url: "#"
+    url: "/contact/"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

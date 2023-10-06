@@ -6,7 +6,7 @@ hero:
 content_blocks:
   - _bookshop_name: "contact_form"
     preheading: "We are Here to Help"
-    heading: "We can be reached at ⬇️"
+    heading: "You can reach us through any of the mediums below ⬇"
     form_heading: "Contact Form"
     address: "STPI Incubation Center, Kakatiya IT Park, Hanamkonda, Telangana - 506001"
     email: ask@yayinailab.tech

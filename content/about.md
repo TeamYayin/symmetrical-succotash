@@ -7,11 +7,11 @@ content_blocks:
   - _bookshop_name: "start"
     preheading: "Who We Are"
     heading: "A Dynamic Team of Creatives"
-    text: "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
+    text: "Although We are Product-driven, But, We offer Information Technology Enabled Services (ITES) to optimize buisness process. We analyze cyber security risks, hunt and fix vulnerabilities in the organization infrastructure."
     image_path: "/images/home-7.jpg"
     button:
-      text: "Get started"
-      url: "/contact/"
+      text: "Schedule a Meeting"
+      url: "https://calendly.com/reach-py563/yayin"
   - _bookshop_name: "numbers"
     sections:
       - title: "Our Mission"
@@ -42,6 +42,9 @@ content_blocks:
   - _bookshop_name: "team"
     preheading: "Meet Our Team"
     heading: "A Team of Experts Dedicated to Excellence"
+    button:
+      text: "See All Jobs"
+      url: "https://yayin-ai-labs.breezy.hr/"
     people:
       - name: "Prajwal"
         image: "/images/team/male-sketch-11.svg"
@@ -67,21 +70,9 @@ content_blocks:
         image: "/images/team/male-sketch-55.svg"
         role: "Web Developer Intern"
         linkedin: "sriharsh-gampa"
-
       - name: "Peddi Gopal"
         image: "/images/team/male-sketch-28.svg"
         role: "Web Developer Intern"
         linkedin: "gopalp379"
-      - name: "Bharani Racharla"
-        image: "/images/team/female-sketch-43.svg"
-        role: "Communications (Past) Intern"
-        linkedin: "bharani-racharla-2339051a4"
-      - name: "priyanshu"
-        image: "/images/team/male-sketch-11.svg"
-        role: "PCB Design (Past) Intern"
-        linkedin: "priyanshu-ss"
-      - name: "Akhilesh"
-        image: "/images/team/male-sketch-28.svg"
-        role: "PCB Design (Past) Intern"
-        linkedin: "akhilesh-kumar-p"
+
 ---

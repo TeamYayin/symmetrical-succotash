@@ -1,6 +1,9 @@
 column:
   - heading: Company
     items:
+      - name: "Careers"
+        url: "https://yayin-ai-labs.breezy.hr/"
+        open_in_new_tab: true
       - name: "Terms & Conditions"
         url: "/posts/2023/06/15/terms-conditions/"
         open_in_new_tab: false
