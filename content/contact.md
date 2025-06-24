@@ -9,7 +9,7 @@ content_blocks:
     heading: "You can reach us through any of the mediums below ⬇"
     form_heading: "Contact Form"
     address: "STPI Incubation Center, Kakatiya IT Park, Hanamkonda, Telangana - 506001"
-    email: ask@yayinailab.tech
+    email: ask@yayinailab.cc
     phone: +91 9182398852
     facebook: awashedupnerd
     github: teamyayin
