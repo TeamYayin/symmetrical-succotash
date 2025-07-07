@@ -43,7 +43,7 @@ content_blocks:
     preheading: "Meet Our Team"
     heading: "A Team of Experts Dedicated to Excellence"
     button:
-      text: "See All Jobs"
+      text: "Work With Us"
       url: "https://yayin-ai-labs.breezy.hr/"
     people:
       - name: "Prajwal"
@@ -58,12 +58,8 @@ content_blocks:
         image: "/images/team/male-sketch-28.svg"
         role: " Advisor"
         linkedin: "csanand"
-      - name: "Arepelly Shylesh"
-        image: "/images/team/male-sketch-11.svg"
-        role: "Full Stack Developer Intern"
-        linkedin: "shylesh-arepelly-9695641ab"
       - name: "M Sai Prashanth"
-        image: "/images/team/male-sketch-55.svg"
+        image: "/images/team/male-sketch-11.svg"
         role: "Blockchain Developer"
         linkedin: "sai-prashanth-mallellu-bab491196"
 ---

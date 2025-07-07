@@ -9,7 +9,7 @@ menu:
     url: "/services/"
     open_in_new_tab: false
   - name: "Portfolio"
-    url: "https://portfolio.yayinailab.tech/projects"
+    url: "https://portfolio.yayinailab.cc/projects"
     open_in_new_tab: true
   - name: "Blog"
     url: "/blog/"
@@ -18,5 +18,5 @@ menu:
     url: "/contact/"
     open_in_new_tab: false
 logo:
-  firstpart: We are moving to
-  lastpart: YayinAILab.CC Soon
+  firstpart: "Yayin "
+  lastpart: "AI Lab"

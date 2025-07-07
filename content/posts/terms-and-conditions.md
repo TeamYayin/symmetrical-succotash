@@ -17,7 +17,7 @@ We are Yayin AI Lab Pvt. Ltd. (" **Company** ," " **we** ," " **us** ," " **our*
 
 We operate , as well as any other related products and services that refer or link to these legal terms (the " **Legal Terms**") (collectively, the " **Services**").
 
-You can contact us by email at ask@yayinailab.tech or by mail
+You can contact us by email at ask@yayinailab.cc or by mail
 To: Yayin AI Lab,
 STPI Incubation Center, Kakatiya IT Park,
 Hanamkonda, Telangana, 506001
@@ -94,7 +94,7 @@ solely for your personal, non-commercial use or internal business purpose.
 
 Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
 
-If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: ask@yayinailab.tech. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
+If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: ask@yayinailab.cc. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
 
 We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.
 

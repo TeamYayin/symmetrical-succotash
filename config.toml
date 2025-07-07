@@ -1,5 +1,5 @@
 relativeURLs = true
-baseURL = 'http://new.yayinailab.tech/'
+baseURL = 'http://yayinailab.cc/'
 languageCode = 'en-us'
 title = "Yayin AI Lab"
 Paginate = 20

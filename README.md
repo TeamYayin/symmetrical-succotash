@@ -1,4 +1,4 @@
-# YayinAILab.Tech
+# Yayin AI Lab Website
 
 This website theme has been adapted from the MIT licensed [Megakit Bootstrap template from Theme Fisher](https://github.com/themefisher/Megakit-Bootstrap-Agency-Template)
 and converted to Hugo by [CloudCannon](https://cloudcannon.com/), a Jamstack platform for the whole team.
@@ -12,7 +12,7 @@ Megakit was built with [Hugo](https://gohugo.io/) version `0.87.0`, but should s
 Run the standalone executable `hugo` to serve the site locally:
 
 ```bash
-$ hugo server
+hugo server
 ```
 
 ## Editing & Deployment
