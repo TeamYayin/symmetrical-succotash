@@ -18,5 +18,5 @@ menu:
     url: "/contact/"
     open_in_new_tab: false
 logo:
-  firstpart: Yayin A
-  lastpart: I Lab
+  firstpart: "Yayin "
+  lastpart: "AI Lab"
