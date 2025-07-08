@@ -27,3 +27,12 @@ column:
       - name: "Contact"
         url: "/contact/"
         open_in_new_tab: false
+  - heading: Portfolio
+    items:
+      - name: "Crafted with care at Yayin AI Lab"
+        url: "https://portfolio.yayinailab.cc/projects"
+        open_in_new_tab: true
+      - name: "View Our Work"
+        url: "https://portfolio.yayinailab.cc/projects"
+        class: "btn btn-main btn-small btn-round-full"
+        open_in_new_tab: true

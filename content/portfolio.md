@@ -1,0 +1,40 @@
+---
+title: "Our Clients"
+seo_options:
+  description: "Explore real-world solutions and digital products built by Yayin AI Lab for leading institutions and companies."
+  featured_image:
+  og_type: "website"
+  canonical_link: "https://portfolio.yayinailab.cc/projects"
+hero:
+  title: "Partnerships That Matter"
+  background_image: "/images/home-2.jpg"
+content_blocks:
+  - _bookshop_name: "portfolio"
+    preheading: "Who We've Worked With"
+    heading: "Our Clientele"
+    projects:
+      - name: "Indian Oil Corp."
+        image_path: "/images/portfolio/IndianOil.png"
+        image_alt: "Indian Oil Corporation project preview"
+        type: "Web Development"
+      - name: "Vardhaman College of Engineering"
+        image_path: "/images/portfolio/vardhamanlogo.png"
+        image_alt: "Vardhaman College website preview"
+        type: "Web Development"
+      - name: "CBIT, Hyderabad"
+        image_path: "/images/portfolio/cbit-logo.png"
+        image_alt: "CBIT Hyderabad project interface"
+        type: "Web Development"
+      - name: "Wallbee Infra Projects"
+        image_path: "/images/portfolio/wallbee-logo.png"
+        image_alt: "Wallbee Infra website mockup"
+        type: "Web Development"
+      - name: "Greenwood High School"
+        image_path: "/images/portfolio/green.png"
+        image_alt: "Greenwood High School website UI"
+        type: "Web Development"
+      - name: "V-Hub"
+        image_path: "/images/portfolio/vhubnewlogo.png"
+        image_alt: "V-Hub project dashboard view"
+        type: "Web Development"
+---

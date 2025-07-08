@@ -27,13 +27,14 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
         <div class="widget">
-          <h4 class="text-capitalize mb-4">Portfolio</h4>
-          <p>We've created around 20 web applications.</p>
-          <a
-            href="https://portfolio.yayinailab.cc/projects"
-            class="btn btn-main btn-small"
-            >View Projects</a
-          >
+          <h4 class="text-capitalize mb-4">
+            {{- (index .Site.Data.footer.column 2).heading -}}
+          </h4>
+          <ul class="list-unstyled footer-menu lh-35">
+            {{ range (index .Site.Data.footer.column 2).items }}
+            <li>{{ partial "utilities/link.html" . }}</li>
+            {{ end }}
+          </ul>
         </div>
       </div>
 
