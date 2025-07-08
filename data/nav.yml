@@ -9,7 +9,7 @@ menu:
     url: "/services/"
     open_in_new_tab: false
   - name: "Portfolio"
-    url: "https://portfolio.yayinailab.cc/projects"
+    url: "/portfolio/"
     open_in_new_tab: true
   - name: "Blog"
     url: "/blog/"
