@@ -1,34 +1,9 @@
-# Yayinailab Website — AI Development Rules
+<!-- BEGIN:nextjs-agent-rules -->
 
-## General
-- Read docs/ before making architectural decisions.
-- Do not invent business claims.
-- Do not delete existing functionality without approval.
-- Prefer reusable components.
-- Prefer semantic HTML.
-- Accessibility is mandatory.
-- Mobile-first behavior must be considered.
-- Avoid unnecessary dependencies.
+# This is NOT the Next.js you know
 
-## Design
-- Follow docs/design-system.md.
-- Do not introduce arbitrary colors.
-- Do not introduce arbitrary typography.
-- Do not create one-off components when an existing component can be reused.
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
 
-## Content
-- Do not invent facts.
-- Preserve approved terminology.
-- Keep content separate from presentation where practical.
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
-## Code
-- Keep components focused.
-- Avoid duplicated logic.
-- Run lint/typecheck/build after meaningful changes.
-- Never ignore build errors.
-
-## Workflow
-- Work incrementally.
-- Explain changes before implementation.
-- Stop when a requested task is complete.
-- Do not autonomously redesign unrelated sections.
+<!-- END:nextjs-agent-rules -->
