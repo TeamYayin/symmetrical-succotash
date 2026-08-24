@@ -53,7 +53,7 @@ Instead of a generic "Hero -> Features -> Testimonials -> Pricing" SaaS layout, 
 
 ### Section 2: Core Capabilities (Services)
 * **Purpose**: Break down the vague "IT Services" into tangible offerings.
-* **Content**: A tight, multi-column grid (not generic cards) detailing: Web/App Development, Cyber Security Analysis, Product Design, and Cultural Preservation (Indo-Aryan/Dravidian web initiatives).
+* **Content**: A tight, multi-column grid (not generic cards) detailing: Web/App Development, Education Technology & Consulting, Product Design, and Cultural Preservation (Indo-Aryan/Dravidian web initiatives).
 * **Visual**: Bordered, list-like structures with crisp iconography.
 * **Action**: "Explore Services" link leading to the full services page.
 
