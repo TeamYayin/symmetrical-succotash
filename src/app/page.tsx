@@ -1,8 +1,13 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { CapabilitiesSection } from "@/components/sections/CapabilitiesSection";
+import { WorkSection } from "@/components/sections/WorkSection";
+import { LabInitiativesSection } from "@/components/sections/LabInitiativesSection";
+import { LanguagePreservationSection } from "@/components/sections/LanguagePreservationSection";
+import { CommunitySection } from "@/components/sections/CommunitySection";
+import { MakerSection } from "@/components/sections/MakerSection";
+import { CtaSection } from "@/components/sections/CtaSection";
 
 export default function Home() {
   return (
@@ -10,54 +15,27 @@ export default function Home() {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Showcase Section */}
-        <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader 
-            title="Design System Showcase" 
-            kicker="// PHASE 2 FOUNDATIONS" 
-          />
-          
-          <div className="space-y-16">
-            {/* Buttons */}
-            <div>
-              <h3 className="font-mono text-sm uppercase tracking-wider text-text-secondary mb-6">1. Buttons</h3>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="primary">Primary Button</Button>
-                <Button variant="secondary">Secondary Button</Button>
-                <Button variant="primary" disabled>Disabled Primary</Button>
-              </div>
-            </div>
-
-            {/* Cards */}
-            <div>
-              <h3 className="font-mono text-sm uppercase tracking-wider text-text-secondary mb-6">2. Cards</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card>
-                  <h4 className="font-heading text-xl font-semibold mb-2">Static Card</h4>
-                  <p className="text-text-secondary text-sm">
-                    A standard structural card with a 1px border. No hover effect.
-                  </p>
-                </Card>
-                <Card hoverEffect={true}>
-                  <h4 className="font-heading text-xl font-semibold mb-2">Interactive Card</h4>
-                  <p className="text-text-secondary text-sm">
-                    Includes a subtle background shift and border color change on hover.
-                  </p>
-                </Card>
-              </div>
-            </div>
-            
-            {/* Typography */}
-            <div>
-              <h3 className="font-mono text-sm uppercase tracking-wider text-text-secondary mb-6">3. Typography</h3>
-              <div className="space-y-4">
-                <p className="font-heading text-4xl font-semibold">Heading (Outfit)</p>
-                <p className="font-sans text-base">Body text (Inter). The quick brown fox jumps over the lazy dog. Building reliable software.</p>
-                <p className="font-mono text-sm">Monospace (JetBrains Mono) for code and data.</p>
-              </div>
-            </div>
+        <HeroSection />
+        
+        {/* Positioning statement (Visual break) */}
+        <section className="py-24 border-b border-text-secondary bg-text-primary text-bg-primary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-heading text-3xl md:text-5xl font-semibold leading-tight text-center max-w-4xl mx-auto">
+              A dual mandate: Commercial engineering and community research.
+            </h2>
+            <p className="mt-8 text-center text-lg text-bg-primary/80 max-w-3xl mx-auto">
+              We fund our research by delivering high-quality commercial digital products. When you hire us for web development or IT infrastructure, you get a team with the technical depth of a research lab.
+            </p>
           </div>
         </section>
+
+        <CapabilitiesSection />
+        <WorkSection />
+        <LabInitiativesSection />
+        <LanguagePreservationSection />
+        <CommunitySection />
+        <MakerSection />
+        <CtaSection />
       </main>
 
       <Footer />
