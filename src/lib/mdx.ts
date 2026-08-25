@@ -12,7 +12,9 @@ export interface ProjectData {
   url?: string;
   repository?: string;
   published: boolean;
+  archived?: boolean;
   content: string;
+  thumbnail?: string | null;
 }
 
 export function getProjectSlugs(): string[] {
@@ -26,6 +28,10 @@ export function getProjectBySlug(slug: string): ProjectData {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  // Extract first image from markdown content as thumbnail (e.g. ![alt](/img/path.png))
+  const imageMatch = content.match(/!\[.*?\]\((.*?)\)/);
+  const thumbnail = imageMatch ? imageMatch[1] : null;
+
   return {
     slug: realSlug,
     title: data.title || "",
@@ -34,7 +40,9 @@ export function getProjectBySlug(slug: string): ProjectData {
     url: data.url,
     repository: data.repository,
     published: data.published === true || data.published === "true",
+    archived: data.archived === true || data.archived === "true",
     content,
+    thumbnail,
   };
 }
 

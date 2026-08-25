@@ -14,7 +14,7 @@ export function SectionHeader({
   return (
     <div className={`mb-12 ${className}`}>
       {kicker && (
-        <span className="block font-mono text-text-secondary text-sm mb-4 uppercase tracking-wider">
+        <span className="block font-mono text-secondary text-sm mb-4 uppercase tracking-wider">
           {kicker}
         </span>
       )}

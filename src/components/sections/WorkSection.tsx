@@ -2,29 +2,13 @@ import React from "react";
 import { SectionHeader } from "../ui/SectionHeader";
 import { Card } from "../ui/Card";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "../ui/Button";
+import { getAllProjects } from "@/lib/mdx";
 
-export function WorkSection() {
-  const projects = [
-    {
-      title: "CBIT Conference Platforms",
-      tech: "Next.js / Tailwind",
-      year: "2023",
-      color: "bg-[#1E3A8A]" // Deep Blue placeholder
-    },
-    {
-      title: "Wallbee Infra",
-      tech: "React / Node.js",
-      year: "2023",
-      color: "bg-[#064E3B]" // Dark Green placeholder
-    },
-    {
-      title: "Rashed Automotives",
-      tech: "Hugo / Netlify",
-      year: "2022",
-      color: "bg-[#7F1D1D]" // Dark Red placeholder
-    }
-  ];
+export async function WorkSection() {
+  // Fetch projects and take the top 3
+  const projects = getAllProjects().slice(0, 3);
 
   return (
     <section className="py-24 border-b border-text-secondary bg-bg-secondary">
@@ -38,23 +22,47 @@ export function WorkSection() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {projects.map((project, index) => (
-            <Card key={index} hoverEffect={true} className="p-0 overflow-hidden flex flex-col group">
-              {/* Structural Placeholder Image */}
-              <div className={`h-48 w-full ${project.color} border-b border-text-secondary flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity`}>
-                <span className="font-mono text-white/50 text-sm">Image Placeholder</span>
-              </div>
-              <div className="p-6 flex-grow flex flex-col justify-between">
-                <div>
-                  <h3 className="font-heading text-xl font-semibold mb-2 text-text-primary group-hover:text-accent transition-colors">{project.title}</h3>
-                </div>
-                <div className="flex justify-between items-center mt-6 pt-4 border-t border-text-secondary">
-                  <span className="font-mono text-xs text-text-secondary">{project.tech}</span>
-                  <span className="font-mono text-xs text-text-secondary">{project.year}</span>
-                </div>
-              </div>
-            </Card>
-          ))}
+          {projects.map((project) => {
+            const year = project.date ? new Date(project.date).getFullYear() : null;
+            const isArchived = project.archived;
+            
+            return (
+              <Link href={`/portfolio/${project.slug}`} key={project.slug} className="block group">
+                <Card hoverEffect={true} className="p-0 overflow-hidden flex flex-col h-full bg-bg-primary relative">
+                  {/* Image or Placeholder */}
+                  <div className={`h-48 w-full bg-secondary/20 border-b border-text-secondary flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity relative`}>
+                    {project.thumbnail ? (
+                      <Image 
+                        src={project.thumbnail} 
+                        alt={project.title} 
+                        fill 
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    ) : (
+                      <span className="font-mono text-text-secondary text-sm z-10">Image Placeholder</span>
+                    )}
+                  </div>
+                  
+                  {isArchived && (
+                    <div className="absolute top-4 right-4 bg-text-primary text-bg-primary font-mono text-[10px] uppercase px-2 py-1 tracking-widest z-10">
+                      Archived
+                    </div>
+                  )}
+
+                  <div className="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-heading text-xl font-semibold mb-2 text-text-primary group-hover:text-accent transition-colors">{project.title}</h3>
+                      <p className="text-sm text-text-secondary line-clamp-2">{project.description}</p>
+                    </div>
+                    <div className="flex justify-between items-center mt-6 pt-4 border-t border-text-secondary/50">
+                      <span className="font-mono text-xs text-text-secondary">{year || "Ongoing"}</span>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            );
+          })}
         </div>
 
         <div className="flex justify-center">

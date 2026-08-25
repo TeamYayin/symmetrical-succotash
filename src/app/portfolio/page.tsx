@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,30 +30,57 @@ export default function PortfolioPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <Link href={`/portfolio/${project.slug}`} key={project.slug} className="block group h-full">
-                <Card hoverEffect={true} className="p-0 overflow-hidden flex flex-col h-full bg-bg-secondary">
-                  <div className="p-6 flex-grow flex flex-col">
-                    <h3 className="font-heading text-xl font-semibold mb-3 text-text-primary group-hover:text-accent transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-text-secondary line-clamp-3 mb-6 flex-grow">
-                      {project.description}
-                    </p>
-                    <div className="flex justify-between items-center pt-4 border-t border-text-secondary/50">
-                      <span className="font-mono text-xs text-text-secondary group-hover:text-text-primary transition-colors">
-                        Read more →
-                      </span>
-                      {project.date && (
-                        <span className="font-mono text-xs text-text-secondary">
-                          {new Date(project.date).getFullYear()}
-                        </span>
+            {projects.map((project) => {
+              const year = project.date ? new Date(project.date).getFullYear() : null;
+              const isArchived = project.archived;
+              
+              return (
+                <Link href={`/portfolio/${project.slug}`} key={project.slug} className="block group h-full">
+                  <Card hoverEffect={true} className="p-0 overflow-hidden flex flex-col h-full bg-bg-secondary relative">
+                    
+                    {/* Image or Placeholder */}
+                    <div className={`h-48 w-full bg-secondary/20 border-b border-text-secondary flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity relative`}>
+                      {project.thumbnail ? (
+                        <Image 
+                          src={project.thumbnail} 
+                          alt={project.title} 
+                          fill 
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      ) : (
+                        <span className="font-mono text-text-secondary text-sm z-10">Image Placeholder</span>
                       )}
                     </div>
-                  </div>
-                </Card>
-              </Link>
-            ))}
+                    
+                    {isArchived && (
+                      <div className="absolute top-4 right-4 bg-text-primary text-bg-primary font-mono text-[10px] uppercase px-2 py-1 tracking-widest z-10">
+                        Archived
+                      </div>
+                    )}
+
+                    <div className="p-6 flex-grow flex flex-col">
+                      <h3 className="font-heading text-xl font-semibold mb-3 text-text-primary group-hover:text-accent transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-text-secondary line-clamp-3 mb-6 flex-grow">
+                        {project.description}
+                      </p>
+                      <div className="flex justify-between items-center pt-4 border-t border-text-secondary/50">
+                        <span className="font-mono text-xs text-text-secondary group-hover:text-text-primary transition-colors">
+                          Read more →
+                        </span>
+                        {year && (
+                          <span className="font-mono text-xs text-text-secondary">
+                            {year}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </section>
       </main>
