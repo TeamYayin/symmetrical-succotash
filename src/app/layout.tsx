@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Outfit } from "next/font/google";
+import { Inter, JetBrains_Mono, Outfit, Noto_Sans_Telugu } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,6 +17,12 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
+const notoSansTelugu = Noto_Sans_Telugu({
+  variable: "--font-telugu",
+  subsets: ["telugu"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Yayin AI Lab",
   description: "Yayin AI Lab is a technology company that builds robust digital products for businesses and educational institutions.",
@@ -30,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} ${outfit.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} ${outfit.variable} ${notoSansTelugu.variable} antialiased`}
       >
         {children}
       </body>

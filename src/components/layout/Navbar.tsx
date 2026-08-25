@@ -21,22 +21,22 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
-              href="/services"
+              href="/capabilities"
               className="text-text-primary text-sm font-medium hover:text-accent transition-colors"
             >
-              Services
+              Capabilities
             </Link>
             <Link
               href="/portfolio"
               className="text-text-primary text-sm font-medium hover:text-accent transition-colors"
             >
-              Portfolio
+              Shipped Work
             </Link>
             <Link
               href="/about"
               className="text-text-primary text-sm font-medium hover:text-accent transition-colors"
             >
-              About
+              Inside the Lab
             </Link>
             <Link href="/contact">
               <Button variant="primary" className="py-2 px-4 text-xs">

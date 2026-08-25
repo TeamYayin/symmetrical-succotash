@@ -7,12 +7,12 @@ export function MakerSection() {
     <section className="py-24 border-b border-text-secondary bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-text-secondary">
-          
+
           {/* Team / Ethos Half */}
           <div className="p-12 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-text-secondary bg-bg-primary">
-            <SectionHeader 
-              title="Engineers, designers, and makers." 
-              kicker="// WHO WE ARE" 
+            <SectionHeader
+              title="Engineers, designers, and makers."
+              kicker="// WHO WE ARE"
               className="mb-8"
             />
             <p className="text-lg text-text-secondary mb-12">
@@ -28,9 +28,9 @@ export function MakerSection() {
           <div className="p-12 lg:p-16 flex flex-col justify-center relative bg-text-primary text-bg-primary overflow-hidden">
             {/* Structural placeholder for keyboard photo */}
             <div className="absolute inset-0 z-0 opacity-20 bg-center bg-cover flex items-center justify-center">
-               <span className="font-mono text-xs text-bg-primary uppercase tracking-widest bg-text-primary px-2">Keyboard Image Placeholder</span>
+              <span className="font-mono text-xs text-bg-primary uppercase tracking-widest bg-text-primary px-2">Keyboard Image Placeholder</span>
             </div>
-            
+
             <div className="relative z-10">
               <span className="font-mono text-accent text-sm mb-4 block uppercase tracking-wider">
                 {"// HARDWARE LAB"}
@@ -41,7 +41,7 @@ export function MakerSection() {
               <p className="text-bg-primary/80 mb-12 max-w-md">
                 Our maker services division designs and assembles premium mechanical keyboards for the developer community.
               </p>
-              <a href="https://dukaan.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://awashedupnerd.in" target="_blank" rel="noopener noreferrer">
                 <Button variant="primary" className="!bg-accent !text-bg-primary !border-accent hover:!bg-bg-primary hover:!text-text-primary">
                   Shop Custom Keyboards
                 </Button>

@@ -48,46 +48,49 @@ export default function AboutPage() {
         <section className="py-24 border-b border-text-secondary bg-bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader 
-              title="A Dynamic Team of Creatives" 
+              title="Inside the Lab" 
               kicker="// WHO WE ARE" 
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-xl text-text-secondary leading-relaxed mb-8">
-                  Although we are product-driven, we offer Information Technology Enabled Services (ITES) to optimize business processes. We analyze cyber security risks, hunt, and fix vulnerabilities in organizational infrastructure.
+                  We don&apos;t just consume open-source software; we build it. Beyond our commercial client work, TeamYayin operates as an experimental lab tackling overlooked technical challenges.
                 </p>
                 <a href="https://calendly.com/reach-py563/yayin" target="_blank" rel="noopener noreferrer">
                   <Button variant="primary">Schedule a Meeting</Button>
                 </a>
               </div>
               <div className="aspect-video bg-text-secondary/10 border border-text-secondary flex items-center justify-center relative overflow-hidden">
-                <span className="font-mono text-sm text-text-secondary">Office / Team Image Placeholder</span>
+                <span className="font-mono text-sm text-text-secondary">Lab / Workspace Image Placeholder</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Mission / Vision Section */}
+        {/* Focus Areas Section */}
         <section className="py-24 border-b border-text-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Our Mission</h3>
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Language Technology</h3>
                 <p className="text-text-secondary leading-relaxed">
-                  Our mission is to provide innovative and tailored solutions that enable businesses to thrive in a competitive landscape. We&apos;re committed to driving success through strategic partnerships.
+                  The web defaults to English. We actively research and build tools to ensure Indo-Aryan and Dravidian languages remain functional, accessible, and preserved in modern web environments.
                 </p>
               </Card>
               <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Our Vision</h3>
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Open Source & EdTech</h3>
                 <p className="text-text-secondary leading-relaxed">
-                  Our vision is to become a globally recognized consulting firm known for delivering transformative results. We aim to be the go-to choice for businesses seeking growth and optimization.
+                  We maintain active GitHub repositories and are currently designing open-source SaaS tools aimed at streamlining operations for the educational sector.
                 </p>
               </Card>
               <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Our Approach</h3>
-                <p className="text-text-secondary leading-relaxed">
-                  Our approach is rooted in collaboration, innovation, and expertise. We work closely with our clients to understand their unique challenges and develop custom strategies to overcome them.
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Makers at Heart</h3>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  When we aren&apos;t writing code, we design and build custom mechanical keyboards for the developer community.
                 </p>
+                <a href="https://awashedupnerd.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-mono uppercase tracking-wider text-accent hover:text-text-primary transition-colors">
+                  Shop our hardware →
+                </a>
               </Card>
             </div>
           </div>

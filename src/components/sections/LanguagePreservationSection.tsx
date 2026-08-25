@@ -28,7 +28,7 @@ export function LanguagePreservationSection() {
             </div>
             <div className="border border-text-secondary/30 p-6 bg-text-primary ml-12">
               <span className="font-mono text-xs text-text-secondary block mb-2">TARGET: TELUGU (DRAVIDIAN)</span>
-              <span className="text-3xl font-sans tracking-wide">వెబ్ డెవలప్‌మెంట్</span>
+              <span className="text-3xl font-telugu tracking-wide">వెబ్ వ్యవస్థల రూపకల్పన</span>
             </div>
           </div>
         </div>

@@ -8,8 +8,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Yayin AI Lab",
-  description: "Recent platforms, conference websites, and digital products built by Yayin AI Lab.",
+  title: "Shipped Work | Yayin AI Lab",
+  description: "Explore our recent platforms, conference websites, and digital products deployed for real users.",
 };
 
 export default function PortfolioPage() {
@@ -22,11 +22,11 @@ export default function PortfolioPage() {
       <main className="flex-grow">
         <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader 
-            title="Portfolio" 
-            kicker="// ALL PROJECTS" 
+            title="We build tools that work." 
+            kicker="// SHIPPED WORK" 
           />
           <p className="text-lg text-text-secondary mb-16 max-w-2xl">
-            A selection of software platforms, conference websites, and digital products engineered by our team.
+            Explore our recent platforms, conference websites, and digital products deployed for real users.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

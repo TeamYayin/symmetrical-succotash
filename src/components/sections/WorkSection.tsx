@@ -14,8 +14,8 @@ export async function WorkSection() {
     <section className="py-24 border-b border-text-secondary bg-bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader 
-          title="Shipped Projects" 
-          kicker="// SELECTED WORK" 
+          title="Shipped Code" 
+          kicker="// SHIPPED WORK" 
         />
         <p className="text-lg text-text-secondary mb-16 max-w-2xl">
           Recent platforms, conference websites, and digital products built by our team.
