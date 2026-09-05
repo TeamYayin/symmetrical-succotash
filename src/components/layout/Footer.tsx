@@ -62,10 +62,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Yayin AI Lab. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-xs text-text-secondary hover:text-accent transition-colors">
+            <Link href="/privacy-policy" className="text-xs text-text-secondary hover:text-accent transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-xs text-text-secondary hover:text-accent transition-colors">
+            <Link href="/terms-and-conditions" className="text-xs text-text-secondary hover:text-accent transition-colors">
               Terms of Service
             </Link>
           </div>
