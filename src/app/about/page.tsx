@@ -32,8 +32,8 @@ export default function AboutPage() {
       image: "/images/team/male-sketch-28.svg"
     },
     {
-      name: "M Sai Prashanth",
-      role: "Blockchain Developer",
+      name: "Vishwas Tyagi",
+      role: "Member Technical Staff",
       linkedin: "https://linkedin.com/in/sai-prashanth-mallellu-bab491196",
       image: "/images/team/male-sketch-11.svg"
     }
@@ -42,14 +42,14 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col bg-bg-primary text-text-primary">
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-24 border-b border-text-secondary bg-bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeader 
-              title="Inside the Lab" 
-              kicker="// WHO WE ARE" 
+            <SectionHeader
+              title="Inside the Lab"
+              kicker="// WHO WE ARE"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
@@ -123,18 +123,18 @@ export default function AboutPage() {
         {/* Team Section */}
         <section className="py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionHeader 
-              title="A Team of Experts Dedicated to Excellence" 
-              kicker="// MEET OUR TEAM" 
+            <SectionHeader
+              title="A Team of Experts Dedicated to Excellence"
+              kicker="// MEET OUR TEAM"
             />
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {team.map((member) => (
                 <Card key={member.name} hoverEffect={true} className="flex flex-col text-center">
                   <div className="w-24 h-24 mx-auto bg-secondary/20 rounded-full border border-text-secondary mb-6 flex items-center justify-center relative overflow-hidden">
-                    <Image 
-                      src={member.image} 
-                      alt={member.name} 
+                    <Image
+                      src={member.image}
+                      alt={member.name}
                       fill
                       className="object-cover"
                     />
