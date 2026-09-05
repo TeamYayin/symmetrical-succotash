@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yayin AI Lab Website
+
+This is the official website and portfolio for [Yayin AI Lab](https://yayinailab.com). It is built using [Next.js](https://nextjs.org) (App Router), Tailwind CSS v4, and MDX for content management.
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The site auto-updates as you edit the files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Developer Wiki & Documentation 📚
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We maintain detailed developer guidelines and architectural decisions in our project wiki. **Please read these before contributing to the codebase:**
 
-## Learn More
+- 🏠 **[Wiki Home](https://github.com/TeamYayin/symmetrical-succotash/wiki)**
+- 🎨 **[Design Direction](https://github.com/TeamYayin/symmetrical-succotash/wiki/design-direction)**: Learn about our brutalist aesthetic, color variables, and typography choices.
+- 🏗️ **[Architecture Overview](https://github.com/TeamYayin/symmetrical-succotash/wiki/architecture-overview)**: Understand the folder structure, server components vs client components, and data fetching.
+- 📝 **[Developer Content Guide](https://github.com/TeamYayin/symmetrical-succotash/wiki/developer-content-guide)**: Learn how to manage MDX files, add new projects, and use the `featured: true` flag for the Shipped Code showcase.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app/`: Next.js App Router pages and global layouts.
+- `src/components/`: Reusable UI components (buttons, cards) and layout sections (Hero, Footer).
+- `src/content/`: Markdown/MDX files for portfolio projects and legal pages.
+- `src/lib/`: Helper functions and utilities (e.g., MDX parsing logic).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The site is configured for pure Static Site Generation (SSG) output (`output: 'export'`). You can build and test the static export locally by running:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
