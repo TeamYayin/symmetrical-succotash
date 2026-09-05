@@ -43,13 +43,18 @@ export function Footer() {
               </h3>
               <ul className="space-y-3">
                 <li>
+                  <a href="https://www.linkedin.com/company/yayinailab/" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary hover:text-accent transition-colors">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
                   <a href="https://github.com/teamyayin" target="_blank" rel="noopener noreferrer" className="text-sm text-text-secondary hover:text-accent transition-colors">
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:hello@yayinailab.com" className="text-sm text-text-secondary hover:text-accent transition-colors">
-                    hello@yayinailab.com
+                  <a href="mailto:hello@yayinailab.cc" className="text-sm text-text-secondary hover:text-accent transition-colors">
+                    hello@yayinailab.cc
                   </a>
                 </li>
               </ul>
