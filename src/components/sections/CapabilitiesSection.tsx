@@ -33,7 +33,7 @@ export function CapabilitiesSection() {
               We fund our research by delivering high-quality commercial digital products. When you hire us for web development or IT infrastructure, you get a team with the technical rigor of a research lab.
             </p>
             <div className="mt-8">
-              <Link href="/capabilities" className="inline-flex items-center text-accent hover:text-text-primary font-medium transition-colors">
+              <Link href="/services" className="inline-flex items-center text-accent hover:text-text-primary font-medium transition-colors">
                 View all capabilities
                 <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

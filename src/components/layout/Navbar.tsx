@@ -21,7 +21,7 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
-              href="/capabilities"
+              href="/services"
               className="text-text-primary text-sm font-medium hover:text-accent transition-colors"
             >
               Capabilities
