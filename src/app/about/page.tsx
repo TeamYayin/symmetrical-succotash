@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <p className="text-xl text-text-secondary leading-relaxed mb-8">
                   We don&apos;t just consume open-source software; we build it. Beyond our commercial client work, TeamYayin operates as an experimental lab tackling overlooked technical challenges.
                 </p>
-                <a href="https://calendly.com/reach-py563/yayin" target="_blank" rel="noopener noreferrer">
+                <a href="https://cal.com/py563/yayin" target="_blank" rel="noopener noreferrer">
                   <Button variant="primary">Schedule a Meeting</Button>
                 </a>
               </div>
