@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/Button";
+import { ThemeToggle } from "../ThemeToggle";
 
 export function Navbar() {
   return (
@@ -38,15 +39,20 @@ export function Navbar() {
             >
               Inside the Lab
             </Link>
-            <Link href="/contact">
-              <Button variant="primary" className="py-2 px-4 text-xs">
-                Contact Us
-              </Button>
-            </Link>
+            
+            <div className="flex items-center gap-4 border-l border-text-secondary/30 pl-4">
+              <ThemeToggle />
+              <Link href="/contact">
+                <Button variant="primary" className="py-2 px-4 text-xs">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button (Simplified for Phase 2) */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <button className="text-text-primary p-2 focus:outline-none">
               <span className="sr-only">Open main menu</span>
               {/* Menu Icon */}

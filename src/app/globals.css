@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors - Option 11 Light Theme Default */
-  --color-bg-primary: #FFFFFF;
-  --color-bg-secondary: #F4F4F5;
-  --color-text-primary: #1D1E18;
-  --color-text-secondary: #5E625A;
+  /* Colors mapped to dynamic CSS variables */
+  --color-bg-primary: var(--theme-bg-primary);
+  --color-bg-secondary: var(--theme-bg-secondary);
+  --color-text-primary: var(--theme-text-primary);
+  --color-text-secondary: var(--theme-text-secondary);
   
-  --color-accent: #ED6A5A;
-  --color-secondary: #98C1BC;
+  --color-accent: var(--theme-accent);
+  --color-secondary: var(--theme-secondary);
   --color-success: #10B981;
   --color-error: #EF4444;
 
@@ -49,4 +49,24 @@ a {
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+/* Light Mode: Logo Colors */
+:root {
+  --theme-bg-primary: #FFFFFF;
+  --theme-bg-secondary: #F4F4F5;
+  --theme-text-primary: #000000;
+  --theme-text-secondary: #52525B;
+  --theme-accent: #20C997; /* Mint */
+  --theme-secondary: #0055FF; /* Blue */
+}
+
+/* Dark Mode: Option 3 (Slate & Orange) */
+.dark {
+  --theme-bg-primary: #111827;
+  --theme-bg-secondary: #1F2937;
+  --theme-text-primary: #FFFFFF;
+  --theme-text-secondary: #9CA3AF;
+  --theme-accent: #FF9030; /* Orange */
+  --theme-secondary: #4B5563; /* Slate muted */
 }
