@@ -60,8 +60,13 @@ export default function AboutPage() {
                   <Button variant="primary">Schedule a Meeting</Button>
                 </a>
               </div>
-              <div className="aspect-video bg-text-secondary/10 border border-text-secondary flex items-center justify-center relative overflow-hidden">
-                <span className="font-mono text-sm text-text-secondary">Lab / Workspace Image Placeholder</span>
+              <div className="aspect-video relative border border-text-secondary overflow-hidden">
+                <Image 
+                  src="/images/team-img4.jpg"
+                  alt="Yayin AI Lab Workspace"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                />
               </div>
             </div>
           </div>
