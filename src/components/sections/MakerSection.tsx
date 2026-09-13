@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionHeader } from "../ui/SectionHeader";
 import { Button } from "../ui/Button";
+import Image from "next/image";
 
 export function MakerSection() {
   return (
@@ -18,9 +19,14 @@ export function MakerSection() {
             <p className="text-lg text-text-secondary mb-12">
               Founded to bridge the gap between high-quality software engineering and cultural impact. We approach every problem with an engineering mindset—whether we&apos;re architecting a cloud platform or designing a physical product.
             </p>
-            {/* Structural placeholder for team photo */}
-            <div className="w-full h-48 bg-text-secondary/10 border border-text-secondary flex items-center justify-center opacity-70">
-              <span className="font-mono text-xs text-text-secondary uppercase tracking-widest">Team Image Placeholder</span>
+            {/* Team photo */}
+            <div className="w-full h-64 sm:h-80 relative border border-text-secondary overflow-hidden">
+              <Image 
+                src="/images/team-image1.png"
+                alt="Yayin AI Lab Team"
+                fill
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
             </div>
           </div>
 
@@ -42,7 +48,7 @@ export function MakerSection() {
                 Our maker services division designs and assembles premium mechanical keyboards for the developer community.
               </p>
               <a href="https://awashedupnerd.in" target="_blank" rel="noopener noreferrer">
-                <Button variant="primary" className="!bg-accent !text-bg-primary !border-accent hover:!bg-bg-primary hover:!text-text-primary">
+                <Button variant="primary">
                   Shop Custom Keyboards
                 </Button>
               </a>

@@ -15,7 +15,7 @@ export default function AboutPage() {
   const team = [
     {
       name: "Prajwal",
-      role: "Founder & Full Stack Developer",
+      role: "Co-founder & Full Stack Developer",
       linkedin: "https://linkedin.com/in/prajwalyashasvi",
       image: "/images/team/male-sketch-11.svg"
     },
