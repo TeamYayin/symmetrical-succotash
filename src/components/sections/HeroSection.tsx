@@ -4,7 +4,7 @@ import { Button } from "../ui/Button";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-bg-primary">
+    <section className="relative min-h-[90vh] py-16 lg:py-24 flex items-center justify-center overflow-hidden bg-bg-primary">
       {/* Abstract Background Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-pulse"></div>
@@ -16,7 +16,7 @@ export function HeroSection() {
           {/* Yayin AI Lab */}
         </span>
         <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary tracking-tight mb-8">
-          Building reliable software. <br/>
+          Building reliable software. <br />
           <span className="text-text-secondary">Researching language technology.</span>
         </h1>
         <p className="mt-6 text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
