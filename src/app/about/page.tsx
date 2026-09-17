@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -164,9 +165,9 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <a href="https://careers.yayinailab.cc/" target="_blank" rel="noopener noreferrer">
+              <Link href="/careers">
                 <Button variant="secondary">Work With Us</Button>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
