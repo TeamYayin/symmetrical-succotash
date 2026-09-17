@@ -16,19 +16,21 @@ export default function ContactPage() {
       <Navbar />
       
       <main className="flex-grow">
-        <section className="py-24 border-b border-text-secondary bg-bg-secondary">
+        <section className="py-24 border-b border-text-secondary/20 bg-gradient-to-br from-[#0a1536] via-[#0A1128] to-[#040814]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader 
-              title="You can reach us through any of the mediums below ⬇" 
-              kicker="// WE ARE HERE TO HELP" 
+              title="Let's build something great together." 
+              kicker="// GET IN TOUCH" 
+              titleClassName="text-white"
+              kickerClassName="text-accent"
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               
               {/* Contact Info */}
               <div className="space-y-8">
-                <Card hoverEffect={false} className="bg-bg-primary">
-                  <h3 className="font-heading text-xl font-semibold mb-6 text-accent">Contact Details</h3>
+                <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                  <h3 className="font-heading text-xl font-semibold mb-6 text-secondary">Contact Details</h3>
                   <ul className="space-y-6">
                     <li className="flex items-start">
                       <svg className="w-6 h-6 text-text-secondary mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -57,12 +59,23 @@ export default function ContactPage() {
                     </li>
                   </ul>
                 </Card>
+
+                {/* Map Component */}
+                <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0] p-2 h-64 relative overflow-hidden flex flex-col">
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Kakatiya%20IT%20Park,%20Hanamkonda,%20Telangana&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    className="w-full flex-grow border-0 rounded-sm"
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </Card>
               </div>
 
               {/* Formspree Contact Form */}
               <div>
-                <Card hoverEffect={false} className="bg-bg-primary">
-                  <h3 className="font-heading text-xl font-semibold mb-6">Contact Form</h3>
+                <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                  <h3 className="font-heading text-xl font-semibold mb-6 text-secondary">Contact Form</h3>
                   <form action="https://formspree.io/f/mrgyrdgl" method="POST" className="space-y-6">
                     <div>
                       <label htmlFor="name" className="block font-mono text-sm text-text-secondary mb-2 uppercase">Full Name</label>
@@ -71,7 +84,7 @@ export default function ContactPage() {
                         id="name" 
                         name="name" 
                         required 
-                        className="w-full bg-bg-secondary border border-text-secondary/50 text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none"
+                        className="w-full bg-white border border-[#E2E8F0] text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none"
                       />
                     </div>
                     <div>
@@ -81,7 +94,7 @@ export default function ContactPage() {
                         id="email" 
                         name="email" 
                         required 
-                        className="w-full bg-bg-secondary border border-text-secondary/50 text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none"
+                        className="w-full bg-white border border-[#E2E8F0] text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none"
                       />
                     </div>
                     <div>
@@ -91,7 +104,7 @@ export default function ContactPage() {
                         name="message" 
                         rows={5} 
                         required 
-                        className="w-full bg-bg-secondary border border-text-secondary/50 text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none resize-y"
+                        className="w-full bg-white border border-[#E2E8F0] text-text-primary px-4 py-3 focus:outline-none focus:border-accent transition-colors rounded-none resize-y"
                       ></textarea>
                     </div>
                     <Button type="submit" variant="primary" className="w-full">

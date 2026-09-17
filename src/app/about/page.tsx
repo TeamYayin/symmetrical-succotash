@@ -36,6 +36,12 @@ export default function AboutPage() {
       role: "Member Technical Staff",
       linkedin: "https://linkedin.com/in/sai-prashanth-mallellu-bab491196",
       image: "/images/team/male-sketch-11.svg"
+    },
+    {
+      name: "Riyazuddin Khan",
+      role: "Member Technical Staff",
+      linkedin: "https://www.linkedin.com/in/riyazuddin-khan-12aa72293",
+      image: "/images/team/male-sketch-28.svg"
     }
   ];
 
@@ -63,7 +69,7 @@ export default function AboutPage() {
                 </a>
               </div>
               <div className="aspect-video relative border border-text-secondary overflow-hidden">
-                <Image 
+                <Image
                   src="/images/team-img4.jpg"
                   alt="Yayin AI Lab Workspace"
                   fill
@@ -109,19 +115,19 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">10+</div>
-                <div className="font-mono text-sm uppercase tracking-wider text-bg-secondary/70">Projects Done</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Projects Done</div>
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">25K</div>
-                <div className="font-mono text-sm uppercase tracking-wider text-bg-secondary/70">Users Worldwide</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Users Worldwide</div>
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">3</div>
-                <div className="font-mono text-sm uppercase tracking-wider text-bg-secondary/70">Available Countries</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Available Countries</div>
               </div>
               <div>
                 <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">0</div>
-                <div className="font-mono text-sm uppercase tracking-wider text-bg-secondary/70">Awards Won</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Awards Won</div>
               </div>
             </div>
           </div>
@@ -137,7 +143,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {team.map((member) => (
-                <Card key={member.name} hoverEffect={true} className="flex flex-col text-center">
+                <Card key={member.name} hoverEffect={true} className="flex flex-col text-center group">
                   <div className="w-24 h-24 mx-auto bg-secondary/20 rounded-full border border-text-secondary mb-6 flex items-center justify-center relative overflow-hidden">
                     <Image
                       src={member.image}
@@ -146,10 +152,10 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="font-heading text-xl font-semibold text-text-primary mb-1">{member.name}</h3>
-                  <p className="text-sm text-text-secondary mb-4">{member.role}</p>
+                  <h3 className="font-heading text-xl font-semibold text-text-primary group-hover:text-white mb-1 transition-colors">{member.name}</h3>
+                  <p className="text-sm text-text-secondary group-hover:text-white/80 mb-4 transition-colors">{member.role}</p>
                   <div className="mt-auto">
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4 text-sm">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent group-hover:!text-white hover:underline underline-offset-4 text-sm transition-colors">
                       LinkedIn
                     </a>
                   </div>
@@ -158,7 +164,7 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center">
-              <a href="https://yayin-ai-labs.breezy.hr/" target="_blank" rel="noopener noreferrer">
+              <a href="https://careers.yayinailab.cc/" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary">Work With Us</Button>
               </a>
             </div>

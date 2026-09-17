@@ -18,7 +18,7 @@ export function Button({
     primary:
       "bg-accent text-black hover:opacity-90 border border-accent",
     secondary:
-      "bg-transparent text-text-primary border border-text-secondary hover:border-text-primary hover:bg-bg-secondary",
+      "bg-transparent text-text-primary border border-text-secondary hover:border-text-primary hover:bg-bg-secondary hover:text-white",
   };
 
   return (
