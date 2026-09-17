@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Outfit, Noto_Sans_Telugu } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk, Noto_Sans_Telugu } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const outfit = Outfit({
+const spaceGrotesk = Space_Grotesk({
   variable: "--font-heading",
   subsets: ["latin"],
 });
@@ -35,13 +34,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} ${outfit.variable} ${notoSansTelugu.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} ${notoSansTelugu.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

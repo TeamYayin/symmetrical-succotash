@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/Button";
-import { ThemeToggle } from "../ThemeToggle";
-
 export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-bg-primary/95 backdrop-blur border-b border-text-secondary">
@@ -13,7 +11,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-3">
               <Image src="/logo.png" alt="Yayin AI Lab Logo" width={32} height={32} className="w-8 h-8" />
-              <span className="font-heading font-semibold text-xl tracking-tight">
+              <span className="font-heading font-semibold text-xl tracking-tight text-accent">
                 Yayin AI Lab
               </span>
             </Link>
@@ -41,9 +39,8 @@ export function Navbar() {
             </Link>
             
             <div className="flex items-center gap-4 border-l border-text-secondary/30 pl-4">
-              <ThemeToggle />
               <Link href="/contact">
-                <Button variant="primary" className="py-2 px-4 text-xs">
+                <Button className="py-2 px-4 text-xs !bg-bg-secondary !text-white !border-bg-secondary hover:!opacity-90">
                   Contact Us
                 </Button>
               </Link>
@@ -52,7 +49,6 @@ export function Navbar() {
 
           {/* Mobile menu button (Simplified for Phase 2) */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
             <button className="text-text-primary p-2 focus:outline-none">
               <span className="sr-only">Open main menu</span>
               {/* Menu Icon */}

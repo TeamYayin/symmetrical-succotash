@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors mapped to dynamic CSS variables */
-  --color-bg-primary: var(--theme-bg-primary);
-  --color-bg-secondary: var(--theme-bg-secondary);
-  --color-text-primary: var(--theme-text-primary);
-  --color-text-secondary: var(--theme-text-secondary);
+  /* Colors - Single Agency Theme (Logo Colors) */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #0A1128; /* Deep Blue for Hero background */
+  --color-text-primary: #000000;
+  --color-text-secondary: #52525B;
   
-  --color-accent: var(--theme-accent);
-  --color-secondary: var(--theme-secondary);
+  --color-accent: #20C997; /* Mint */
+  --color-secondary: #0055FF; /* Electric Blue */
   --color-success: #10B981;
   --color-error: #EF4444;
 
@@ -51,22 +51,4 @@ a {
     scrollbar-width: none;
 }
 
-/* Light Mode: Logo Colors */
-:root {
-  --theme-bg-primary: #FFFFFF;
-  --theme-bg-secondary: #F4F4F5;
-  --theme-text-primary: #000000;
-  --theme-text-secondary: #52525B;
-  --theme-accent: #20C997; /* Mint */
-  --theme-secondary: #0055FF; /* Blue */
-}
 
-/* Dark Mode: Option 3 (Slate & Orange) */
-.dark {
-  --theme-bg-primary: #111827;
-  --theme-bg-secondary: #1F2937;
-  --theme-text-primary: #FFFFFF;
-  --theme-text-secondary: #9CA3AF;
-  --theme-accent: #FF9030; /* Orange */
-  --theme-secondary: #4B5563; /* Slate muted */
-}

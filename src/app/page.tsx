@@ -18,12 +18,12 @@ export default function Home() {
         <HeroSection />
         
         {/* Positioning statement (Visual break) */}
-        <section className="py-24 border-b border-text-secondary bg-text-primary text-bg-primary">
+        <section className="py-24 border-b border-text-secondary/20 bg-bg-primary text-text-primary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-heading text-3xl md:text-5xl font-semibold leading-tight text-center max-w-4xl mx-auto">
               A dual mandate: Commercial engineering and community research.
             </h2>
-            <p className="mt-8 text-center text-lg text-bg-primary/80 max-w-3xl mx-auto">
+            <p className="mt-8 text-center text-lg text-text-secondary max-w-3xl mx-auto">
               We fund our research by delivering high-quality commercial digital products. When you hire us for web development or IT infrastructure, you get a team with the technical depth of a research lab.
             </p>
           </div>

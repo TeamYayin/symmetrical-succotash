@@ -20,7 +20,7 @@ export function CapabilitiesSection() {
   ];
 
   return (
-    <section className="py-24 md:py-32 border-b border-text-secondary bg-bg-secondary">
+    <section className="py-24 md:py-32 border-b border-text-secondary bg-gradient-to-br from-[#0a1536] via-[#0A1128] to-[#040814]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Sticky Heading */}
@@ -28,12 +28,14 @@ export function CapabilitiesSection() {
             <SectionHeader 
               title="Commercial engineering meets community research." 
               kicker="// CAPABILITIES" 
+              titleClassName="text-white"
+              kickerClassName="text-accent"
             />
-            <p className="mt-6 text-xl text-text-secondary max-w-lg leading-relaxed">
+            <p className="mt-6 text-xl text-white/80 max-w-lg leading-relaxed">
               We fund our research by delivering high-quality commercial digital products. When you hire us for web development or IT infrastructure, you get a team with the technical rigor of a research lab.
             </p>
-            <div className="mt-8">
-              <Link href="/services" className="inline-flex items-center text-accent hover:text-text-primary font-medium transition-colors">
+            <div className="mt-10">
+              <Link href="/services" className="inline-flex items-center px-6 py-3 bg-accent text-black font-semibold hover:opacity-90 transition-opacity">
                 View all capabilities
                 <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -45,7 +47,7 @@ export function CapabilitiesSection() {
           {/* Right Column - Cards */}
           <div className="space-y-6">
             {capabilities.map((cap, index) => (
-              <Card key={index} hoverEffect={true} className="bg-bg-primary">
+              <Card key={index} hoverEffect={true} className="!bg-[#F8FAFC] border-[#E2E8F0]">
                 <div className="flex items-start">
                   <div className="mt-1 flex-shrink-0">
                     <div className="w-2 h-2 rounded-full bg-accent mt-2"></div>

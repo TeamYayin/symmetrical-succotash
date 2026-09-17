@@ -3,7 +3,7 @@ import { Button } from "../ui/Button";
 
 export function CtaSection() {
   return (
-    <section className="py-32 bg-bg-secondary text-text-primary border-t border-text-secondary/20">
+    <section className="py-32 bg-bg-primary text-text-primary border-t border-text-secondary/20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 tracking-tight">
           Start a project with Yayin AI Lab

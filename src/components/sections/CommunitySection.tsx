@@ -10,8 +10,8 @@ export function CommunitySection() {
         {/* Credibility / Microsoft Part */}
         <div className="mb-24 flex flex-col md:flex-row items-center justify-between border border-text-secondary p-8 bg-bg-secondary">
           <div className="md:w-2/3 mb-8 md:mb-0 md:pr-12">
-            <h3 className="font-heading text-2xl font-semibold mb-2">Authorized Microsoft Solutions Partner</h3>
-            <p className="text-text-secondary">
+            <h3 className="font-heading text-2xl font-semibold mb-2 text-white">Authorized Microsoft Solutions Partner</h3>
+            <p className="text-white/80">
               We provide Microsoft 365 licensing, deployment, and ongoing IT support, tailored specifically for the needs of schools, colleges, and growing businesses.
             </p>
           </div>
