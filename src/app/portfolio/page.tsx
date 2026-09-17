@@ -36,10 +36,10 @@ export default function PortfolioPage() {
               
               return (
                 <Link href={`/portfolio/${project.slug}`} key={project.slug} className="block group h-full">
-                  <Card hoverEffect={true} className="p-0 overflow-hidden flex flex-col h-full bg-bg-secondary relative">
+                  <Card hoverEffect={true} className="p-0 overflow-hidden flex flex-col h-full !bg-[#F8FAFC] border-[#E2E8F0] relative">
                     
                     {/* Image or Placeholder */}
-                    <div className={`h-48 w-full bg-secondary/20 border-b border-text-secondary flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity relative`}>
+                    <div className={`h-48 w-full bg-secondary/5 border-b border-text-secondary/20 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity relative`}>
                       {project.thumbnail ? (
                         <Image 
                           src={project.thumbnail} 
@@ -60,13 +60,13 @@ export default function PortfolioPage() {
                     )}
 
                     <div className="p-6 flex-grow flex flex-col">
-                      <h3 className="font-heading text-xl font-semibold mb-3 text-text-primary group-hover:text-accent transition-colors">
+                      <h3 className="font-heading text-xl font-semibold mb-3 text-text-primary group-hover:text-secondary transition-colors">
                         {project.title}
                       </h3>
                       <p className="text-sm text-text-secondary line-clamp-3 mb-6 flex-grow">
                         {project.description}
                       </p>
-                      <div className="flex justify-between items-center pt-4 border-t border-text-secondary/50">
+                      <div className="flex justify-between items-center pt-4 border-t border-text-secondary/20">
                         <span className="font-mono text-xs text-text-secondary group-hover:text-text-primary transition-colors">
                           Read more →
                         </span>

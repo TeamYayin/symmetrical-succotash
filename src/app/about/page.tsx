@@ -45,15 +45,17 @@ export default function AboutPage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-24 border-b border-text-secondary bg-bg-secondary">
+        <section className="py-24 border-b border-text-secondary bg-gradient-to-br from-[#0a1536] via-[#0A1128] to-[#040814]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
               title="Inside the Lab"
               kicker="// WHO WE ARE"
+              titleClassName="text-white"
+              kickerClassName="text-accent"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-xl text-text-secondary leading-relaxed mb-8">
+                <p className="text-xl text-white/80 leading-relaxed mb-8">
                   We don&apos;t just consume open-source software; we build it. Beyond our commercial client work, TeamYayin operates as an experimental lab tackling overlooked technical challenges.
                 </p>
                 <a href="https://cal.com/py563/yayin" target="_blank" rel="noopener noreferrer">
@@ -76,20 +78,20 @@ export default function AboutPage() {
         <section className="py-24 border-b border-text-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Language Technology</h3>
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Language Technology</h3>
                 <p className="text-text-secondary leading-relaxed">
                   The web defaults to English. We actively research and build tools to ensure Indo-Aryan and Dravidian languages remain functional, accessible, and preserved in modern web environments.
                 </p>
               </Card>
-              <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Open Source & EdTech</h3>
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Open Source & EdTech</h3>
                 <p className="text-text-secondary leading-relaxed">
                   We maintain active GitHub repositories and are currently designing open-source SaaS tools aimed at streamlining operations for the educational sector.
                 </p>
               </Card>
-              <Card hoverEffect={false} className="bg-bg-secondary">
-                <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Makers at Heart</h3>
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Makers at Heart</h3>
                 <p className="text-text-secondary leading-relaxed mb-4">
                   When we aren&apos;t writing code, we design and build custom mechanical keyboards for the developer community.
                 </p>

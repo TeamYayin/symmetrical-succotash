@@ -36,19 +36,21 @@ export default function CapabilitiesPage() {
       
       <main className="flex-grow">
         {/* Capabilities Grid Section */}
-        <section className="py-24 border-b border-text-secondary bg-bg-secondary">
+        <section className="py-24 border-b border-text-secondary bg-gradient-to-br from-[#0a1536] via-[#0A1128] to-[#040814]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader 
               title="Technical Capabilities" 
               kicker="// WHAT WE DO" 
+              titleClassName="text-white"
+              kickerClassName="text-accent"
             />
-            <p className="text-xl text-text-secondary mb-16 max-w-2xl leading-relaxed">
+            <p className="text-xl text-white/80 mb-16 max-w-2xl leading-relaxed">
               We focus on practical, scalable solutions for growing businesses and educational organizations.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {capabilities.map((service, index) => (
-                <Card key={index} hoverEffect={true} className="bg-bg-primary h-full flex flex-col">
+                <Card key={index} hoverEffect={true} className="!bg-[#F8FAFC] border-[#E2E8F0] h-full flex flex-col">
                   <div className="w-12 h-12 bg-secondary/20 text-accent border border-text-secondary rounded-sm flex items-center justify-center mb-6">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter">
                       <path d={service.icon}></path>
@@ -63,9 +65,9 @@ export default function CapabilitiesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-text-primary text-bg-primary text-center">
+        <section className="py-24 bg-bg-primary text-text-primary text-center">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span className="block font-mono text-accent text-sm mb-4 uppercase tracking-wider">
+            <span className="block font-mono text-secondary text-sm mb-4 uppercase tracking-wider">
               {/* FOR EVERY BUSINESS TYPE */}
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-semibold mb-12">
