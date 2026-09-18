@@ -1,0 +1,180 @@
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Yayin AI Lab",
+  description: "A Dynamic Team of Creatives and Engineers.",
+};
+
+export default function AboutPage() {
+  const team = [
+    {
+      name: "Prajwal",
+      role: "Co-founder & Full Stack Developer",
+      linkedin: "https://linkedin.com/in/prajwalyashasvi",
+      image: "/images/team/male-sketch-11.svg"
+    },
+    {
+      name: "Avinash Yadav",
+      role: "Advisor",
+      linkedin: "https://linkedin.com/in/avinashmadharavena",
+      image: "/images/team/male-sketch-55.svg"
+    },
+    {
+      name: "Chetan S Anand",
+      role: "Advisor",
+      linkedin: "https://linkedin.com/in/csanand",
+      image: "/images/team/male-sketch-28.svg"
+    },
+    {
+      name: "Vishwas Tyagi",
+      role: "Member Technical Staff",
+      linkedin: "https://linkedin.com/in/sai-prashanth-mallellu-bab491196",
+      image: "/images/team/male-sketch-11.svg"
+    },
+    {
+      name: "Riyazuddin Khan",
+      role: "Member Technical Staff",
+      linkedin: "https://www.linkedin.com/in/riyazuddin-khan-12aa72293",
+      image: "/images/team/male-sketch-28.svg"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col bg-bg-primary text-text-primary">
+      <Navbar />
+
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="py-24 border-b border-text-secondary bg-gradient-to-br from-[#0a1536] via-[#0A1128] to-[#040814]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              title="Inside the Lab"
+              kicker="// WHO WE ARE"
+              titleClassName="text-white"
+              kickerClassName="text-accent"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-xl text-white/80 leading-relaxed mb-8">
+                  We don&apos;t just consume open-source software; we build it. Beyond our commercial client work, TeamYayin operates as an experimental lab tackling overlooked technical challenges.
+                </p>
+                <a href="https://cal.com/py563/yayin" target="_blank" rel="noopener noreferrer">
+                  <Button variant="primary">Schedule a Meeting</Button>
+                </a>
+              </div>
+              <div className="aspect-video relative border border-text-secondary overflow-hidden">
+                <Image
+                  src="/images/team-img4.jpg"
+                  alt="Yayin AI Lab Workspace"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Focus Areas Section */}
+        <section className="py-24 border-b border-text-secondary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Language Technology</h3>
+                <p className="text-text-secondary leading-relaxed">
+                  The web defaults to English. We actively research and build tools to ensure Indo-Aryan and Dravidian languages remain functional, accessible, and preserved in modern web environments.
+                </p>
+              </Card>
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Open Source & EdTech</h3>
+                <p className="text-text-secondary leading-relaxed">
+                  We maintain active GitHub repositories and are currently designing open-source SaaS tools aimed at streamlining operations for the educational sector.
+                </p>
+              </Card>
+              <Card hoverEffect={false} className="!bg-[#F8FAFC] border-[#E2E8F0]">
+                <h3 className="font-heading text-2xl font-semibold mb-4 text-secondary">Makers at Heart</h3>
+                <p className="text-text-secondary leading-relaxed mb-4">
+                  When we aren&apos;t writing code, we design and build custom mechanical keyboards for the developer community.
+                </p>
+                <a href="https://awashedupnerd.in/" target="_blank" rel="noopener noreferrer" className="text-sm font-mono uppercase tracking-wider text-accent hover:text-text-primary transition-colors">
+                  Shop our hardware →
+                </a>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="py-16 border-b border-text-secondary bg-text-primary text-bg-primary">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">10+</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Projects Done</div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">25K</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Users Worldwide</div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">3</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Available Countries</div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-heading font-bold text-accent mb-2">0</div>
+                <div className="font-mono text-sm uppercase tracking-wider text-bg-primary/70">Awards Won</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Section */}
+        <section className="py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              title="A Team of Experts Dedicated to Excellence"
+              kicker="// MEET OUR TEAM"
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+              {team.map((member) => (
+                <Card key={member.name} hoverEffect={true} className="flex flex-col text-center group">
+                  <div className="w-24 h-24 mx-auto bg-secondary/20 rounded-full border border-text-secondary mb-6 flex items-center justify-center relative overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-text-primary group-hover:text-white mb-1 transition-colors">{member.name}</h3>
+                  <p className="text-sm text-text-secondary group-hover:text-white/80 mb-4 transition-colors">{member.role}</p>
+                  <div className="mt-auto">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent group-hover:!text-white hover:underline underline-offset-4 text-sm transition-colors">
+                      LinkedIn
+                    </a>
+                  </div>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link href="/careers">
+                <Button variant="secondary">Work With Us</Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
