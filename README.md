@@ -1,6 +1,6 @@
 # Yayin AI Lab Website
 
-This is the official website and portfolio for [Yayin AI Lab](https://yayinailab.com). It is built using [Next.js](https://nextjs.org) (App Router), Tailwind CSS v4, and MDX for content management.
+This is the official website and portfolio for [Yayin AI Lab](https://yayinailab.com). It is built using [Next.js](https://nextjs.org) (App Router), Tailwind CSS v4, and MDX for content management. This new website is a redesign of the old Hugo version, which was based on Themefisher's Megakit Template.
 
 ## Getting Started
 
