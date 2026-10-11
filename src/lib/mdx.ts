@@ -70,7 +70,7 @@ export function getFeaturedProjects(): ProjectData[] {
   const allProjects = getAllProjects();
   
   // Only get explicitly featured projects
-  let featuredProjects = allProjects.filter(p => p.featured);
+  const featuredProjects = allProjects.filter(p => p.featured);
   
   // Sort featured projects by featuredOrder if available, then by date
   featuredProjects.sort((a, b) => {
